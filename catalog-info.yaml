@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: my-ai-test1 
+  description: Secure Supply Chain Example for Build your own Large Language Model (LLM)-enabled chat application. Attach your own model server. This sample demonstrates software supply chain security functionality using an advanced continuous integration pipeline covering building, CVE scanning, security scanning, signatures, attestations, SLSA provenance and SBOM along with Gitops-based continuous deployment.   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:
+    # ArgoCD apps from this template used tssc-gitops as the grouping
+    argocd/app-selector: tssc/gitops=my-ai-test1
+    backstage.io/kubernetes-id: my-ai-test1 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: my-ai-test1
+    quay.io/repository-slug: sjmrhtap/my-ai-test1
+  tags: ["ai", "llamacpp", "vllm", "python", "sscs", "sbom", "acs"] 
+spec:
+  type: service
+  owner: user:guest 
+  lifecycle: experimental
+ 
