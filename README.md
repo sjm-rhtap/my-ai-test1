@@ -1,4 +1,4 @@
-# Creating an application with a Chatbot code sample
+# Creating an application with a Chatbot code sample.
 
 **Note:** The Chatbot code sample uses the **8080** HTTP port.
 
